@@ -1522,7 +1522,7 @@ img.zoom-img {
 .top-banner .nav a:hover { color: #990000; }
 .top-banner .nav a.active { color: #990000; font-weight: 600; }
 .top-banner .nav .sep { color: #bbb; margin: 0 0.15rem; }
-.top-banner--home { justify-content: center; }
+.top-banner--home { justify-content: flex-end; }
 
 /* Opening row: portrait + TL;DR */
 .opening-row { margin-bottom: 2.5rem; }
@@ -1549,7 +1549,7 @@ img.zoom-img {
 }
 .tldr-column ul.tldr {
   padding-left: 2rem;
-  margin: 0 0 1rem;
+  margin: 1.8rem 0 2.2rem;
 }
 .tldr-column ul.tldr li { margin-bottom: 0.6rem; line-height: 1.4; }
 .tldr-column .contact {

@@ -35,6 +35,37 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  <style>
+    details.expandable { margin: 0; }
+    details.expandable > summary {
+      list-style: none;
+      outline: none;
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    details.expandable > summary::-webkit-details-marker { display: none; }
+    details.expandable > summary::marker { content: ""; }
+    .expand-toggle {
+      cursor: pointer;
+      display: inline-block;
+      color: #990000;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+      text-transform: uppercase;
+      border-bottom: 1px dashed #990000;
+      padding-bottom: 1px;
+    }
+    .expand-toggle::before { content: "Expand \25B8"; }
+    details.expandable[open] .expand-toggle::before { content: "Collapse \25BE"; }
+    .expand-toggle:hover { color: #660000; border-bottom-color: #660000; }
+
+    /* About Me tightening + justification */
+    .about-me p { text-align: justify; margin-bottom: 1rem; }
+    .about-me ul { margin: 0.5rem 0 1rem 2rem; }
+    .about-me ul li { margin-bottom: 0.25rem; text-align: justify; }
+  </style>
+
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
@@ -53,7 +84,7 @@
             </div>
             <div class="six columns card u-pull-left">
                 <h1>Suvinay Subramanian</h1>
-                <p style="line-height:23px;">Computer Architect @ Google<br>
+                <p style="line-height:23px;">Senior Staff Engineer @ Google<br>
                 Email: <a href="mailto:suvinay@csail.mit.edu">suvinay@csail.mit.edu</a></p>
                 <a href="docs/cv.pdf">CV</a>
                 &nbsp; &bull; &nbsp;
@@ -69,8 +100,8 @@
           <h3>TL;DR</h3>
           <div class="sixteen columns offset-by-six">
             <ul>
-              <li> 👨‍💻 Building
-                   AI Accelerator Systems
+              <li> 👨‍💻 Senior Staff Engineer &lt;&gt; Building
+                   AI Supercomputers
                    (<a href="https://en.wikipedia.org/wiki/Tensor_processing_unit">TPUs</a>)
                    @ <a href="https://www.google.com">Google</a>
               <li> 🎓 EECS Ph.D., S.M. @ <a href="https://web.mit.edu/">MIT</a> |
@@ -81,38 +112,51 @@
           </div>
 
           <h3>About Me</h3>
-          <p>
-          I work at Google building hardware systems
-          (<a href="https://en.wikipedia.org/wiki/Tensor_processing_unit">TPUs</a>) to accelerate machine learning and AI.
-          My expertise is in hardware-software codesign: I have worked on solutions spanning
-          the hardware-software stack ranging from
-          <a href="pubs/2013.smart.date.pdf">circuits</a>,
-          <a href="pubs/2013.smart.computer.pdf">microarchitecture</a>,
-          <a href="pubs/2016.swarm.toppicks.pdf">architecture</a>,
-          <a href="pubs/2017.fractal.isca.pdf">programming models</a>, and
-          <a href="pubs/2014.scorpio.isca.pdf">interconnection</a>
-          <a href="pubs/2016.pifo.sigcomm.pdf">networks</a>.
-          </p>
+          <div class="about-me">
+            <p>
+            I am a Senior Staff Engineer at <a href="https://www.google.com">Google</a>,
+            building AI supercomputing systems
+            (<a href="https://en.wikipedia.org/wiki/Tensor_processing_unit">TPUs</a>).
+            I work at the intersection of hardware, systems research, and performance engineering.
+            </p>
 
-          <p>
-          I received a Ph.D. from <a href="http://web.mit.edu">MIT</a> (<a href="http://www.csail.mit.edu">CSAIL</a>),
-          advised by <a href="http://people.csail.mit.edu/sanchez">Daniel Sanchez</a>.
-          I helped develop new
-          <a href="http://swarm.csail.mit.edu/">programming models and
-          multi-core architectures</a>
-          to exploit challenging forms of parallelism in applications.
+            <p>I lead TPU codesign across silicon and software:</p>
+            <ul>
+              <li>Shipped headline hardware features across TPU generations, delivering ~2&times; gen-over-gen performance gains.</li>
+              <li>Founded and lead TPU's architectural simulation ecosystem &mdash; from cycle-level
+                  microarchitecture to analytical system-level models for LLM training, serving, and RL
+                  &mdash; directly informing multi-billion-dollar TPU and GPU investment decisions.</li>
+              <li>Maintain an active research portfolio to de-risk emerging paradigms.</li>
+            </ul>
 
-          I completed my masters at <a href="http://web.mit.edu">MIT</a>
-          advised by <a href="https://www.comp.nus.edu.sg/~peh/">Li-Shiuan Peh</a> on
-          high-performance <a href="https://scorpio.mit.edu/">interconnection networks</a>.
-
-          Prior to MIT, I spent a wonderful four years as an undergraduate at
-          <a href="http://www.iitm.ac.in">IIT Madras</a>.
-          </p>
+            <p>
+            Before Google, I received a Ph.D. from <a href="http://web.mit.edu">MIT</a>
+            (<a href="http://www.csail.mit.edu">CSAIL</a>),
+            advised by <a href="http://people.csail.mit.edu/sanchez">Daniel Sanchez</a>,
+            where I helped develop new
+            <a href="http://swarm.csail.mit.edu/">programming models and multi-core architectures</a>
+            for challenging forms of parallelism. My masters at
+            <a href="http://web.mit.edu">MIT</a>, advised by
+            <a href="https://www.comp.nus.edu.sg/~peh/">Li-Shiuan Peh</a>, was on high-performance
+            <a href="https://scorpio.mit.edu/">interconnection networks</a>.
+            Prior to MIT, I spent a wonderful four years as an undergraduate at
+            <a href="http://www.iitm.ac.in">IIT Madras</a>.
+            </p>
+          </div>
         </div>
 
         <div class="intro">
           <h3>Interests and Activities</h3>
+          <p>
+            I co-host the <a href="https://comparchpodcast.podbean.com/">Computer Architecture Podcast</a>
+            with Lisa Hsu (Microsoft).
+            I give technical talks on <a href="https://cloud.google.com/tpu">TPUs</a> at universities and conferences.
+            I am passionate about music: perform with bands, and support the arts through
+            operating roles in Bay Area music organizations
+            (e.g., <a href="https://southindiafinearts.com/">South India Fine Arts</a>).
+          </p>
+        <details class="expandable">
+          <summary><span class="expand-toggle"></span></summary>
           I co-host the <a href="https://comparchpodcast.podbean.com/">Computer Architecture Podcast</a>
           with Lisa Hsu (Microsoft). Check out our episodes on your favorite podcast player
           (<a href="https://podcasts.apple.com/us/podcast/computer-architecture-podcast/id1515736114">iTunes</a>,
@@ -155,9 +199,35 @@
           src="https://www.youtube.com/embed/?listType=playlist&list=PLkEchDykKJzYeeAvMcBAt_-Peebhdd-N5&showinfo=1"
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </p>
+        </details>
         </div>
 
         <h3>Publications</h3>
+        <div class="sixteen columns offset-by-six">
+          <ul>
+            <li>
+            <a href="pubs/2025.promise.icml.pdf">Learning to Keep a Promise: Scaling Language Model
+            Decoding Parallelism with Learned Asynchronous Decoding</a><br>
+            <a href="https://icml.cc/Conferences/2025">ICML 2025</a><br>
+
+            <li>
+            <a href="pubs/2023.tpu.isca.pdf">TPU v4: An Optically Reconfigurable Supercomputer for Machine
+            Learning with Hardware Support for Embeddings</a><br>
+            <a href="https://iscaconf.org/isca2023/">ISCA 2023 (Industry Track)</a><br>
+
+            <li>
+            <a href="pubs/2023.flat.asplos.pdf">FLAT: An Optimized Dataflow for Mitigating
+            Attention Bottlenecks</a><br>
+            <a href="https://asplos-conference.org/2023/">ASPLOS 2023</a><br>
+
+            <li>
+            <a href="pubs/2017.fractal.isca.pdf">Fractal: An Execution Model
+            for Fine-Grain Nested Speculative Parallelism</a><br>
+            <a href="http://isca17.ece.utoronto.ca/">ISCA 2017</a><br>
+          </ul>
+        </div>
+        <details class="expandable">
+          <summary><span class="expand-toggle"></span></summary>
             <div class="sixteen columns offset-by-six">
                 <ul>
                 <li>
@@ -320,6 +390,7 @@
 
                 </ul>
             </div>
+        </details>
 
         <h3>Theses</h3>
             <div class="sixteen columns offset-by-six">

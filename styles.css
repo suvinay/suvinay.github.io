@@ -1034,7 +1034,7 @@ h3 {
   color: #1a1a1a;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  border-bottom: 2px solid #990000;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 0.3rem;
   font-weight: 400;
 }
@@ -1486,3 +1486,46 @@ img.zoom-img {
   filter: "alpha(opacity=100)";
   opacity: 1;
 }
+
+/* Top navigation banner */
+.top-banner {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+.top-banner a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.4rem;
+}
+.top-banner a:hover { color: #990000; }
+.top-banner a.active { color: #990000; font-weight: 600; }
+.top-banner .sep { color: #bbb; margin: 0 0.2rem; }
+
+/* "Read More" / page-link affordance */
+.read-more {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+}
+.read-more a {
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+/* Sub-page layout: tighter, no portrait sidebar */
+.subpage h1.page-title {
+  font-size: 2.6rem;
+  margin: 0 0 1.5rem;
+  color: #1a1a1a;
+}
+.subpage p,
+.subpage li { text-align: justify; }
+.subpage .pub-list { padding-left: 1.5rem; }
+.subpage .pub-list li { margin-bottom: 0.8rem; text-align: left; }

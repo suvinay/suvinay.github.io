@@ -11,7 +11,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <meta name="description" content="Suvinay Subramanian — Computer Architect @ Google"/>
+  <meta name="description" content="Suvinay Subramanian — Senior Staff Engineer @ Google"/>
   <meta name="keywords" content="computer architecture, parallel, programming, software, Suvinay Subramanian, Suvinay, Subramanian">
   <meta name="author" content="Suvinay Subramanian">
   <meta http-equiv="cleartype" content="on">
@@ -36,34 +36,7 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    details.expandable { margin: 0; }
-    details.expandable > summary {
-      list-style: none;
-      outline: none;
-      margin-top: 0.75rem;
-      margin-bottom: 1rem;
-    }
-    details.expandable > summary::-webkit-details-marker { display: none; }
-    details.expandable > summary::marker { content: ""; }
-    .expand-toggle {
-      cursor: pointer;
-      display: inline-block;
-      color: #990000;
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 0.05rem;
-      text-transform: uppercase;
-      border-bottom: 1px dashed #990000;
-      padding-bottom: 1px;
-    }
-    .expand-toggle::before { content: "Expand \25B8"; }
-    details.expandable[open] .expand-toggle::before { content: "Collapse \25BE"; }
-    .expand-toggle:hover { color: #660000; border-bottom-color: #660000; }
-
-    /* About Me tightening + justification */
     .about-me p { text-align: justify; margin-bottom: 1rem; }
-    .about-me ul { margin: 0.5rem 0 1rem 2rem; }
-    .about-me ul li { margin-bottom: 0.25rem; text-align: justify; }
   </style>
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -76,6 +49,14 @@
 
 <body>
     <div class="container">
+        <nav class="top-banner">
+          <a href="/" class="active">Home</a><span class="sep">·</span>
+          <a href="/projects/">Projects</a><span class="sep">·</span>
+          <a href="/publications/">Publications</a><span class="sep">·</span>
+          <a href="/interests/">Interests</a><span class="sep">·</span>
+          <a href="/podcast/">Podcast</a>
+        </nav>
+
         <div class="row">
             <div class="six columns">
                 <figure>
@@ -120,15 +101,6 @@
             I work at the intersection of hardware, systems research, and performance engineering.
             </p>
 
-            <p>I lead TPU codesign across silicon and software:</p>
-            <ul>
-              <li>Shipped headline hardware features across TPU generations, delivering ~2&times; gen-over-gen performance gains.</li>
-              <li>Founded and lead TPU's architectural simulation ecosystem &mdash; from cycle-level
-                  microarchitecture to analytical system-level models for LLM training, serving, and RL
-                  &mdash; directly informing multi-billion-dollar TPU and GPU investment decisions.</li>
-              <li>Maintain an active research portfolio to de-risk emerging paradigms.</li>
-            </ul>
-
             <p>
             Before Google, I received a Ph.D. from <a href="http://web.mit.edu">MIT</a>
             (<a href="http://www.csail.mit.edu">CSAIL</a>),
@@ -146,63 +118,27 @@
         </div>
 
         <div class="intro">
-          <h3>Interests and Activities</h3>
+          <h3>Interests</h3>
           <p>
-            I co-host the <a href="https://comparchpodcast.podbean.com/">Computer Architecture Podcast</a>
-            with Lisa Hsu (Microsoft).
-            I give technical talks on <a href="https://cloud.google.com/tpu">TPUs</a> at universities and conferences.
-            I am passionate about music: perform with bands, and support the arts through
-            operating roles in Bay Area music organizations
-            (e.g., <a href="https://southindiafinearts.com/">South India Fine Arts</a>).
+            I give technical talks on <a href="https://cloud.google.com/tpu">TPUs</a>
+            at universities and conferences. I am passionate about music: perform with
+            bands, and support the arts through operating roles in Bay Area music
+            organizations (e.g., <a href="https://southindiafinearts.com/">South India Fine Arts</a>).
           </p>
-        <details class="expandable">
-          <summary><span class="expand-toggle"></span></summary>
-          I co-host the <a href="https://comparchpodcast.podbean.com/">Computer Architecture Podcast</a>
-          with Lisa Hsu (Microsoft). Check out our episodes on your favorite podcast player
-          (<a href="https://podcasts.apple.com/us/podcast/computer-architecture-podcast/id1515736114">iTunes</a>,
-          <a href="https://open.spotify.com/show/6fff71ppMFLosWyquhibcU">Spotify</a>,
-          <a href="https://www.stitcher.com/show/computer-architecture-podcast">Stitcher</a>, etc.
-          ).
-          <p>
-          <div class="post-content">
-          <iframe title="Computer Architecture Podcast" id="multi_iframe" src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F8578213%2Fplaylist_multi.xml&vjs=1&kdsowie31j4k1jlf913=cfd65a55081db65e9f96ba1e561b2d59820f43fe&size=430&skin=&episode_list_bg=%23ffffff&bg_left=%23000000&bg_mid=%230c5056&bg_right=%232a1844&podcast_title_color=%23c4c4c4&episode_title_color=%23ffffff&auto=0&download=1&show_playlist_recent_number=10&pbad=1" frameborder="0" scrolling="no" width="100%" height="432" allowfullscreen=""></iframe>
-          </div>
-          </p>
-
-          <p>I also give technical talks on <a href="https://cloud.google.com/tpu">TPUs</a>
-          and other topics I work on at universities, conferences, and other
-          forums. <br/>
-
-          <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/?listType=playlist&list=PLkEchDykKJzZOu0b1ro52LKNtAd2ETxN7"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </p>
-
-          <p>
-          Outside work, I enjoy hiking, traveling, cooking, reading, word games,
-          and most genres of music. I am passionate about <a href="https://en.wikipedia.org/wiki/Carnatic_music">Carnatic music</a>,
-          and learn Carnatic vocal music and
-          the <a href="https://en.wikipedia.org/wiki/Mridangam">Mridangam</a>, an
-          Indian percussion instrument. I actively support these art forms through
-          operating roles in some Bay Area organizations
-          (e.g., <a href="https://southindiafinearts.com/">South India Fine Arts</a>).
-          </p>
-
-          <p>
-          While at MIT, I was part of a South Asian fusion a cappella group, <a href="http://ohms.mit.edu/">MIT Ohms</a>.
-          We enjoyed performing live
-          and participated in several inter-collegiate a capella competitions.
-          I have also enjoyed singing with others for local events through my
-          high school, undergraduate and graduate school years [select
-          performances playlist below].
-          <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/?listType=playlist&list=PLkEchDykKJzYeeAvMcBAt_-Peebhdd-N5&showinfo=1"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </p>
-        </details>
+          <p class="read-more"><a href="/interests/">More &rarr;</a></p>
         </div>
 
-        <h3>Publications</h3>
+        <div class="intro">
+          <h3>Podcast</h3>
+          <p>
+            I co-host the <a href="https://comparchpodcast.podbean.com/">Computer Architecture Podcast</a>
+            with Lisa Hsu (Microsoft) &mdash; conversations with leading researchers and
+            practitioners in computer architecture.
+          </p>
+          <p class="read-more"><a href="/podcast/">More &rarr;</a></p>
+        </div>
+
+        <h3>Select Publications</h3>
         <div class="sixteen columns offset-by-six">
           <ul>
             <li>
@@ -225,186 +161,8 @@
             for Fine-Grain Nested Speculative Parallelism</a><br>
             <a href="http://isca17.ece.utoronto.ca/">ISCA 2017</a><br>
           </ul>
+          <p class="read-more"><a href="/publications/">All publications &rarr;</a></p>
         </div>
-        <details class="expandable">
-          <summary><span class="expand-toggle"></span></summary>
-            <div class="sixteen columns offset-by-six">
-                <ul>
-                <li>
-                <a href="pubs/2025.promise.icml.pdf">Learning to Keep a Promise: Scaling Language Model
-                Decoding Parallelism with Learned Asynchronous Decoding</a><br>
-                Tian Jin, Ellie Y. Cheng, Zack Ankner, Nikunj Saunshi, Blake M.
-                Elias, Amir Yazdanbakhsh, Jonathan Ragan-Kelley,
-                Suvinay Subramanian, Michael Carbin<br>
-                <a href="https://icml.cc/Conferences/2025">ICML 2025</a>
-                 (To appear)
-                 [<a href="https://x.com/tjingrant/status/1896667757800042724">X (Twitter) Thread</a>]
-                <br>
-
-                <li>
-                <a href="pubs/2025.rago.isca.pdf">RAGO: Systematic Performance Optimization
-                for Retrieval-Augmented Generation Serving</a><br>
-                Wenqi Jiang, Suvinay Subramanian, Cat Graves, Gustavo Alonso,
-                Amir Yazdanbakhsh, Vidushi Dadu<br>
-                <a href="https://iscaconf.org/isca2025/">ISCA 2025</a> (To appear)<br>
-
-                <li>
-                <a href="pubs/2025.hermes.arxiv.pdf">Understanding and Optimizing Multi-Stage AI
-                Inference Pipelines</a><br>
-                Abhimanyu Rajeshkumar Bambhaniya, Hanjiang Wu, Suvinay
-                Subramanian, Sudarshan Srinivasan, Souvik Kundu, Amir
-                Yazdanbakhsh, Midhilesh Elavazhagan, Madhu Kumar, Tushar Krishna<br>
-                <a href="https://arxiv.org/abs/2504.09775">arxiv</a><br>
-
-                <li>
-                <a href="pubs/2025.interplay.iclr.pdf">Effective Interplay
-                between Sparsity and Quantization: From Theory to Practice</a><br>
-                Simla Burcu Harma, Ayan Chakraborty, Elizaveta Kostenok, Danila
-                Mishin, Dongho Ha, Babak Falsafi, Martin Jaggi, Ming Liu, Yunho
-                Oh, Suvinay Subramanian, Amir Yazdanbakhsh<br>
-                <a href="https://iclr.cc/Conferences/2025">ICLR
-                2025</a> <b>(Spotlight)</b><br>
-
-                <li>
-                <a href="pubs/2025.journey.iclr.pdf">The Journey Matters:
-                Average Parameter Count over Pre-training Unifies Sparse and
-                Dense Scaling Laws</a><br>
-                Tian Jin, Ahmed Imtiaz Humayun, Utku Evci, Suvinay Subramanian,
-                Amir Yazdanbakhsh, Dan Alistarh, Gintare Karolina Dziugaite<br>
-                <a href="https://iclr.cc/Conferences/2025">ICLR 2025</a><br>
-
-                <li>
-                <a href="pubs/2025.progressive.cpal.pdf">Progressive Gradient
-                Flow for Robust N:M Sparsity Training in Transformers</a><br>
-                Abhimanyu Rajeshkumar Bambhaniya, Amir Yazdanbakhsh, Suvinay
-                Subramanian, Sheng-Chun Kao, Shivani Agrawal, Utku Evci, Tushar
-                Krishna<br>
-                <a href="https://cpal.cc/">CPAL 2025</a><br>
-
-                <li>
-                <a href="pubs/2023.tpu.isca.pdf">TPU v4: An Optically Reconfigurable Supercomputer for Machine
-                Learning with Hardware Support for Embeddings</a><br>
-                Norman P. Jouppi, George Kurian, Sheng Li, Peter Ma, Rahul Nagarajan, Lifeng Nai,
-                Nishant Patil, Suvinay Subramanian, Andy Swing, Brian Towles, Cliff Young, Xiang Zhou,
-                Zongwei Zhou, David Patterson<br>
-                <a href="https://iscaconf.org/isca2023/">ISCA 2023 (Industry Track)</a><br>
-
-                <li>
-                <a href="pubs/2023.flat.asplos.pdf">FLAT: An Optimized Dataflow for Mitigating
-                Attention Bottlenecks</a><br>
-                Sheng-Chun Kao, Suvinay Subramanian, Gaurav Agrawal, Amir Yazdanbakhsh, Tushar Krishna<br>
-                <a href="https://asplos-conference.org/2023/">ASPLOS 2023</a><br>
-
-                <li>
-                <a href="pubs/2023.step.icml.pdf">STEP: Learning N:M Structured Sparsity Masks from
-                Scratch with Precondition</a><br>
-                Yucheng Lu, Shivani Agrawal, Suvinay Subramanian, Oleg Rybakov,
-                Christopher De Sa, Amir Yazdanbakhsh<br>
-                <a href="https://icml.cc/Conferences/2023">ICML 2023</a><br>
-
-                <li>
-                <a href="pubs/2022.nmsparse.snn.pdf">Training Recipe for
-                N:M Structured Sparsity with Decaying Pruning Mask</a><br>
-                Sheng-Chun Kao, Amir Yazdanbakhsh, Suvinay Subramanian, Shivani Agrawal,
-                Utku Evci, Tushar Krishna<br>
-                <a href="https://sites.google.com/view/sparsity-workshop-2022">SNN 2022</a><br>
-
-                <li>
-                <a href="pubs/2018.espresso.micro.pdf">Harmonizing Speculative
-                and Non-Speculative Execution in Architectures for Ordered Parallelism</a><br>
-                Mark C. Jeffrey, Suvinay Subramanian, Victor A. Ying, Hyun Ryong Lee, Joel Emer, Daniel Sanchez<br>
-                <a href="http://www.microarch.org/micro51/">MICRO 2018</a><br>
-
-                <li>
-                <a href="pubs/2017.sam.pact.pdf">SAM: Optimizing Multithreaded Cores for Speculative Parallelism</a><br>
-                Maleen Abeydeera, Suvinay Subramanian, Mark C. Jeffrey, Joel Emer, Daniel Sanchez<br>
-                <a href="https://parasol.tamu.edu/pact17/">PACT 2017</a><br>
-
-                <li>
-                <a href="pubs/2017.fractal.isca.pdf">Fractal: An Execution Model
-                for Fine-Grain Nested Speculative Parallelism</a><br>
-                Suvinay Subramanian, Mark C. Jeffrey, Maleen Abeydeera, Hyun
-                Ryong Lee, Victor A. Ying, Joel Emer, Daniel Sanchez<br>
-                <a href="http://isca17.ece.utoronto.ca/">ISCA 2017</a><br>
-                <a href="http://news.mit.edu/2017/speedup-parallel-computing-algorithms-0630">MIT News Article</a>,
-                <a href="https://news.ycombinator.com/item?id=14699204">Hacker News Discussion</a><br>
-
-                <li>
-                <a href="pubs/2016.swarm.micro.pdf">Data-Centric Execution of Speculative Parallel Programs</a><br>
-                Mark C. Jeffrey, Suvinay Subramanian, Maleen Abeydeera, Joel Emer, Daniel Sanchez<br>
-                <a href="http://www.microarch.org/micro49/">MICRO 2016</a><br>
-
-                <li>
-                <a href="pubs/2016.pifo.sigcomm.pdf">Programmable Packet Scheduling at Line Rate</a><br>
-                Anirudh Sivaraman, Suvinay Subramanian, Anurag Agrawal, Sharad Chole, Shang-Tse Chuang, Tom Edsall, Mohammad Alizadeh, Sachin Katti, Nick McKeown, Hari Balakrishnan<br>
-                <a href="http://conferences.sigcomm.org/sigcomm/2016/">SIGCOMM 2016</a><br>
-                <a href="http://web.mit.edu/pifo/">Web site</a> <br>
-
-                <li>
-                <a href="pubs/2016.swarm.toppicks.pdf">Unlocking Ordered Parallelism with the Swarm Architecture</a><br>
-                Mark C. Jeffrey, Suvinay Subramanian, Cong Yan, Joel Emer, Daniel Sanchez<br>
-                <a href="https://www.computer.org/computingnow/micro">IEEE Micro 2016</a><br>
-                <b>Top Picks from the Computer Architecture Conferences<br></b>
-                <a href="http://news.mit.edu/2016/parallel-programming-easy-0620">MIT News Article</a>,
-                <a href="http://www.eejournal.com/archives/articles/20160726-swarm/">EE Journal Article</a> <br>
-
-                <li>
-                <a href="pubs/2015.swarm.micro.pdf">A Scalable Architecture for Ordered Parallelism</a><br>
-                Mark C. Jeffrey, Suvinay Subramanian, Cong Yan, Joel Emer, Daniel Sanchez<br>
-                <a href="http://www.microarch.org/micro48/">MICRO 2015</a><br>
-                <b>Selected for IEEE Micro&#39;s Top Picks special issue of "most significant papers in computer architecture
-                based on novelty and long-term impact" from 2015<br></b>
-
-                <li>
-                <a href="pubs/2015.sched.hotnets.pdf">Towards Programmable Packet Scheduling</a><br>
-                Anirudh Sivaraman, Suvinay Subramanian, Anurag Agrawal, Sharad Chole, Shang-Tse Chuang, Tom Edsall, Mohammad Alizadeh, Sachin Katti, Nick McKeown, Hari Balakrishnan<br>
-                <a href="http://conferences.sigcomm.org/hotnets/2015/">HotNets 2015</a><br>
-
-                <li>
-                <a href="pubs/2014.scorpio.hotchips.pdf">SCORPIO: A 36-core Research Chip Demonstrating Snoopy Coherence on a Scalable Mesh NoC with In-Network Ordering</a><br>
-                Chia-Hsin Owen Chen, Sunghyun Park, Suvinay Subramanian, Tushar Krishna, Bhavya K. Daya, Woo-Cheol Kwon, Brett Wilkerson, John Arends, Anantha P. Chandrakasan, Li-Shiuan Peh<br>
-                <a href="http://www.hotchips.org/archives/2010s/hc26/">HotChips 2014</a><br>
-
-                <li>
-                <a href="pubs/2014.scorpio.isca.pdf">SCORPIO: A 36-core Research Chip Demonstrating Snoopy Coherence on a Scalable Mesh NoC with In-Network Ordering</a><br>
-                Bhavya K. Daya, Chia-Hsin Owen Chen, Suvinay Subramanian, Woo-Cheol Kwon, Sunghyun Park, Tushar Krishna, Anantha P. Chandrakasan, Li-Shiuan Peh<br>
-                <a href="http://cag.engr.uconn.edu/isca2014/">ISCA 2014</a><br>
-                <a href="http://news.mit.edu/2014/researchers-unveil-experimental-36-core-chip-0623">MIT News Article</a> <br>
-
-                <li>
-                <a href="pubs/2013.sdn-dataplane.hotnets.pdf">No Silver Bullet: Extending SDN to the Data Plane</a><br>
-                Anirudh Sivaraman, Keith Winstein, Suvinay Subramanian, Hari Balakrishnan<br>
-                <a href="http://conferences.sigcomm.org/hotnets/2013/">HotNets 2013</a><br>
-                <b>Selected for the final round of the <a href="https://www.qualcomm.com/invention/research/university-relations/innovation-fellowship/finalists">Qualcomm Innovation Fellowship</a> <br></b>
-                <a href="http://web.mit.edu/anirudh/www/sdn-data-plane.html">Web site</a> <br>
-
-                <li>
-                <a href="pubs/2013.smart.computer.pdf">Single-Cycle Multihop Asynchronous Repeated Traversal: A SMART Future for Reconfigurable On-Chip Networks</a><br>
-                Tushar Krishna, Chia-Hsin Owen Chen, Sunghyun Park, Woo-Cheol Kwon, Suvinay Subramanian, Anantha P. Chandrakasan, Li-Shiuan Peh<br>
-                <a href="http://www.computer.org/web/computingnow/computer">IEEE Computer, October 2013</a><br>
-
-                <li>
-                <a href="pubs/2013.smart.date.pdf">SMART: A Single-Cycle Reconfigurable NoC for SoC Applications</a><br>
-                Chia-Hsin Owen Chen, Sunghyun Park, Tushar Krishna, Suvinay Subramanian, Anantha P. Chandrakasan, Li-Shiuan Peh<br>
-                <a href="http://www.date-conference.com/">DATE 2013</a><br>
-
-                </ul>
-            </div>
-        </details>
-
-        <h3>Theses</h3>
-            <div class="sixteen columns offset-by-six">
-                <ul>
-                <li>
-                <a href="pubs/2018.phd-dissertation.pdf">Architectural Techniques to Unlock Ordered and Nested Speculative Parallelism</a> <br>
-                Ph.D. Dissertation, MIT, September 2018 <br>
-
-                <li>
-                <a href="pubs/2013.omni.sm-thesis.pdf">Ordered Mesh Network Interconnect (OMNI): Design and Implementation of In-Network Coherence</a> <br>
-                S.M. Thesis, MIT, June 2013 <br>
-                <a href="pubs/2013.omni.masterworks.pdf">Poster</a>
-                </ul>
-            </div>
 
       <div class="footer">
         <hr class="thin" />

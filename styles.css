@@ -1606,3 +1606,136 @@ img.zoom-img {
 .subpage > ul > li { margin-bottom: 0.3rem; line-height: 1.4; }
 ul.pub-list { padding-left: 1.5rem; }
 ul.pub-list li { margin-bottom: 0.8rem; text-align: left; }
+
+/* Podcast: episode listing on the index, plus per-episode page elements */
+.episodes-heading { margin-top: 2.5rem; }
+.episode-list {
+  max-width: 820px;
+  margin: 1rem 0 0;
+}
+.episode-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: inherit;
+}
+.episode-row:hover { background: #fafafa; }
+.episode-icon { flex: 0 0 110px; }
+.episode-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+.episode-meta { flex: 1 1 auto; min-width: 0; }
+.episode-title {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.02rem;
+}
+.episode-summary {
+  font-size: 1.45rem;
+  color: #444;
+  margin: 0;
+  text-align: left;
+}
+.episode-row:hover .episode-title { color: #990000; }
+
+/* Per-episode page elements */
+.ch-time {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.35rem;
+  color: #666;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.podcast-back {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 1rem;
+}
+h2.ep-title {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  letter-spacing: 0.03rem;
+  line-height: 1.3;
+  margin: 0.5rem 0 1rem;
+  font-weight: 600;
+}
+.ep-audio {
+  width: 100%;
+  max-width: 640px;
+  display: block;
+  margin: 0 0 0.5rem;
+}
+.podcast-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Mobile: stack the episode row */
+@media (max-width: 600px) {
+  .episode-row {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem 0;
+  }
+  .episode-icon {
+    flex: 0 0 auto;
+    max-width: 96px;
+  }
+  .episode-title { font-size: 1.6rem; }
+}
+
+/* Responsive video embeds (16:9) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  margin: 0.5rem 0 1rem;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Mobile safety: long URLs / author lists must not overflow */
+.subpage > p,
+.subpage > ul > li,
+ul.pub-list li,
+.episode-summary,
+.about-me p,
+.tldr-column ul.tldr li,
+.tldr-column .contact { overflow-wrap: anywhere; }
+
+/* Mobile-specific tweaks across the site */
+@media (max-width: 550px) {
+  /* Banner: compact and let the brand wrap above the nav cleanly */
+  .top-banner { gap: 0.3rem 0.5rem; }
+  .top-banner .brand { font-size: 2.0rem; }
+  .top-banner .nav { font-size: 1.35rem; }
+  .top-banner .nav a { margin: 0 0.1rem; padding: 0.1rem 0.2rem; }
+  .top-banner .nav .sep { margin: 0 0.05rem; }
+
+  /* Opening row: text first, photo below; cap photo width */
+  .tldr-column { padding-right: 0; }
+  .tldr-column .name { font-size: 2.2rem; }
+  .opening-row img { max-width: 240px; margin: 0 auto; }
+
+  /* Section head: keep [More] inline and small */
+  .section-head { gap: 0.5rem; }
+  .section-head .more { font-size: 1.1rem; }
+
+  /* Subpage content: a touch tighter */
+  .subpage > h3 { margin-top: 2rem; }
+}

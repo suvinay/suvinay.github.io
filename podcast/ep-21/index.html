@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Ep 21: Caroline Trippel | High-assurance Computer Architectures | Computer Architecture Podcast</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Suvinay Subramanian">
+
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+</head>
+
+<body>
+    <div class="container subpage">
+        <nav class="top-banner">
+          <a href="/" class="brand">Suvinay Subramanian</a>
+          <span class="nav">
+            <a href="/">Home</a><span class="sep">·</span>
+            <a href="/work/">Work</a><span class="sep">·</span>
+            <a href="/publications/">Publications</a><span class="sep">·</span>
+            <a href="/interests/">Interests</a><span class="sep">·</span>
+            <a href="/podcast/" class="active">Podcast</a>
+          </span>
+        </nav>
+
+        <p class="podcast-back"><a href="/podcast/">&larr; All episodes</a></p>
+        <h2 class="ep-title">Ep 21: Caroline Trippel | High-assurance Computer Architectures</h2>
+
+        <div class="ep-iframe"><iframe title="Ep 21: Caroline Trippel | High-assurance Computer Architectures" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);height:150px;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=pfju3-197e31a-pb&from=pb6admin&share=1&download=1&rtl=0&fonts=Arial&skin=1&font-color=auto&logo_link=episode_page&btn-skin=c73a3a" loading="lazy"></iframe></div>
+        <p class="podcast-link">
+          <a href="https://comparchpodcast.podbean.com/e/ep-21-high-assurance-computer-architectures-with-dr-caroline-trippel-stanford-university/">Listen on Podbean &rarr;</a>
+        </p>
+
+        <h3>Summary</h3>
+        <p>This episode of the Computer Architecture Podcast, hosted by Suvinay Subramanian and Lisa Hsu, features a deep dive into the intersection of hardware and software assurance with Dr. Caroline Trippel, an Assistant Professor in the Computer Science and Electrical Engineering departments at Stanford University. Dr. Trippel’s research is focused on developing high-assurance computer architectures that are demonstrably correct, secure, and reliable.</p>
+        <p>The core of the discussion centers on the challenges of formal verification for complex hardware designs, a problem with &quot;staggering statistics&quot; where over 85% of hardware projects still contain critical bugs despite massive verification efforts. Dr. Trippel advocates for a shift from traditional, manual, and top-down verification methods to an automated, domain-specific, and &quot;bottom-up&quot; approach. Her work involves building new hardware-software contracts that expose more micro-architectural details to software, allowing for the creation of parameterized compilers and tools that can find and repair hardware-related bugs.</p>
+        <p>The conversation meticulously explores how the formal verification challenges inherent in traditional memory consistency models (like Total Store Order) are fundamentally related to the recent wave of hardware security vulnerabilities (like Spectre and Meltdown). Dr. Trippel details how her team&#x27;s techniques, originally for verifying memory models, were repurposed to automatically synthesize abstract micro-architectural specifications (μSpec models) from RTL, enabling the discovery and mitigation of side-channel attacks through compiler-level defenses and novel hardware-software contracts.</p>
+
+        <h3>Chapters</h3>
+        <ul>
+          <li><span class="ch-time">00:04:13</span> &mdash; The Core of High-Assurance Architecture: Building an Ecosystem of Tools</li>
+          <li><span class="ch-time">00:08:50</span> &mdash; The Verification Bottleneck: Why Traditional Top-Down Methods Fail</li>
+          <li><span class="ch-time">00:18:16</span> &mdash; Automating Verification: The Bottom-Up Approach and μSpec Synthesis</li>
+          <li><span class="ch-time">00:20:46</span> &mdash; A Deep Dive: How Expertise is Shifted from Manual Properties to Automated Templates</li>
+          <li><span class="ch-time">00:34:06</span> &mdash; The Analogy Between Memory Consistency and Hardware Security Vulnerabilities</li>
+          <li><span class="ch-time">00:43:53</span> &mdash; Compiler-Level Defenses: Mitigating Side-Channel Attacks with New Hardware-Software Contracts</li>
+          <li><span class="ch-time">01:00:19</span> &mdash; Evolving the ISA: The Need for Finer-Grained Communication Between Hardware and Software</li>
+          <li><span class="ch-time">01:07:34</span> &mdash; The Journey to Stanford: From Pre-Med to Formal Verification and Computer Architecture</li>
+          <li><span class="ch-time">01:20:41</span> &mdash; Advice for Grad Students: Humility, Curiosity, and Incremental Research</li>
+        </ul>
+
+        <h3>Takeaways</h3>
+        <ul>
+          <li>Dr. Trippel&#x27;s work defines high-assurance computer architectures as needing to be correct, secure, and reliable, and aims to build an ecosystem of tools to achieve these goals.</li>
+          <li>Hardware verification remains a critical bottleneck, with over 85% of hardware projects suffering from critical bugs that escape to silicon, largely due to the complexity of manually writing and checking formal properties in a traditional top-down flow.</li>
+          <li>Her solution involves a &quot;bottom-up&quot; approach where simple, low-level properties are automatically generated from RTL designs and composed to reverse-engineer abstract micro-architectural specifications (μSpec models), significantly reducing manual expert effort.</li>
+          <li>The underlying cause of memory consistency model bugs and hardware security side-channel vulnerabilities (like Spectre) is structurally similar, centering on the variable hardware resource usage and ordering/visibility of micro-architectural events.</li>
+          <li>Effective security mitigation requires new hardware-software contracts that expose micro-architectural information, allowing compilers to implement targeted, low-overhead defenses (like intelligent fence insertion and register cleaning) that prevent speculative data flow to vulnerable instructions.</li>
+        </ul>
+
+        <div class="footer">
+          <hr class="thin" />
+          <p style="margin-bottom: 0">Copyright Suvinay Subramanian © 2016 - Present</p>
+        </div>
+    </div>
+</body>
+</html>

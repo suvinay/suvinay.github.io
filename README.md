@@ -1,3 +1,3 @@
-# suvinay.com
+# [Suvinay Subramanian Webpage](https://suvinay.com)
 
-Website for Suvinay Subramanian.
+[Suvinay Subramanian Webpage](https://suvinay.com)

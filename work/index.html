@@ -73,20 +73,48 @@
           The <a href="https://swarm.csail.mit.edu/">Swarm architecture</a>
           developed new programming models and multi-core architectures to tackle
           challenging forms of parallelism, and scale to hundreds of cores.
+          It makes fine-grained parallelism practical by leveraging order as a 
+          general synchronization primitive. Swarm unlocks abundant parallelism
+          scaling challenging applications from a broad set of domains including
+          graph analytics, databases, machine learning, and
+          discrete-event simulation. It outperforms state-of-the-art
+          software-only parallel algorithms by one to two orders of magnitude,
+          demonstrating speedups on applications that had eluded successful
+          parallelization for decades.
         </p>
 
         <h3>Domain-specific Programmable Networks | MIT</h3>
         <p>
           <a href="https://web.mit.edu/pifo/">PIFO</a> introduced a simple, yet
-          performant hardware abstraction for packet scheduling at line-rate in
-          network routers.
+          performant hardware abstraction (PIFO) for packet scheduling at line-rate in
+          network routers. The Push-In First-Out Queue (PIFO) is a priority
+          queue data structure that allows packets to be "pushed" (enqueued)
+          into an arbitrary location in the queue, but only dequeued from the
+          head. PIFOs enable programmable packet scheduling: by programming how
+          each packet's location in the PIFO is computed as it arrives, PIFOs
+          allow network operators to express a wide variety of practical
+          schedulers. We demonstrated the feasibility of PIFOs in hardware
+          (16-nm technology node) at high clock-rates typical in high-end switches 
+          of the day.
         </p>
 
         <h3>Interconnection Networks | MIT</h3>
+        <figure style="float: right; margin: 0 0 1rem 1.5rem; max-width: 240px;">
+          <img src="/images/scorpio_chip.jpg" alt="SCORPIO chip" style="width: 100%; border-radius: 4px;">
+        </figure>
         <p>
           The <a href="https://news.mit.edu/2014/researchers-unveil-experimental-36-core-chip-0623">SCORPIO</a>
           and SMART chips developed ideas that simplified cache coherence and
-          multi-core programming, through novel on-chip network ordering primitives.
+          multi-core programming, through novel on-chip network ordering
+          primitives. SCORPIO was a 36-core processor taped out in a 45-nm
+          process node: it was the first multi-core processor to demonstrate
+          global ordering on a mesh network-on-chip (NoC), enabling a simple
+          snoopy coherence protocol and memory consistency model, while
+          achieving high multi-threaded performance. The SMART chip also taped
+          out in a 45-nm technology node demonstrated
+          a novel low-swing clockless repeated link circuit that enabled
+          multi-hop (virtual) single-cycle paths between cores, achieving 
+          low-power and low-latency network-on-chip (NoC) architectures.
         </p>
 
         <div class="footer">

@@ -1,4 +1,6 @@
-# ssub-website — suvinay.github.io
+# career/website — suvinay.github.io
+
+**Repo:** `suvinay/suvinay.github.io`
 
 Suvinay's personal site. **Published, hand-written static HTML** — no Hugo, no build step, no
 Jekyll (`.nojekyll` is deliberate). Served from GitHub Pages off `suvinay/suvinay.github.io`.
@@ -15,7 +17,7 @@ Jekyll (`.nojekyll` is deliberate). Served from GitHub Pages off `suvinay/suvina
 | `interests/` · `docs/` | Interests pages · hosted `cv.pdf`. |
 | `styles.css` · `fontello/` · `favicons/` | Styling and icons. |
 
-Not Hugo — `projects/work/mit/ssub-website` **is** a Hugo site. Don't confuse them.
+Not Hugo — `projects/work/mit/csail-website` **is** a Hugo site. Don't confuse them.
 
 ## Conventions that bite
 
@@ -24,7 +26,7 @@ Not Hugo — `projects/work/mit/ssub-website` **is** a Hugo site. Don't confuse 
 - **Never commit or push without being asked.** Push is publication here.
 - **Check both `publications/` and `pubs/`** when adding a paper — the split is historical and
   links go to either.
-- **`docs/cv.pdf` is a copy.** The source lives in `projects/work/resume/`. Update there first,
+- **`docs/cv.pdf` is a copy.** The source lives in `projects/work/career/resume/`. Update there first,
   then copy the built PDF over.
 - The site asserts his title and affiliation in `<meta>` tags. Keep those accurate.
 

@@ -1,4 +1,4 @@
-# ssub-website — memory
+# website — memory
 
 Durable facts for this project. One line each; open the file when the hook is relevant.
 Format and the bar for entry: `myspace/.agents/memory/README.md`.

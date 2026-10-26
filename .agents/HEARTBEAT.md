@@ -1,4 +1,4 @@
-# HEARTBEAT.md — ssub-website
+# HEARTBEAT.md — website
 
 Periodic tasks for this project. Run via `/meta-upkeep-heartbeat`; format and cadence arithmetic are in
 `myspace/.agents/skills/meta-upkeep-heartbeat/SKILL.md`.
